@@ -1,1 +1,4 @@
-env_two: My new env variable
+server:
+  port: 80
+
+env_two: ${ENV_TWO}
