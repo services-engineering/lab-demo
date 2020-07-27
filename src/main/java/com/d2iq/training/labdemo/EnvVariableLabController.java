@@ -10,7 +10,8 @@ public class EnvVariableLabController {
     private String envOne = "";
     private String envTwo = "";
 
-    public EnvVariableLabController(@Value("#{environment.ENV_ONE}") String envOne, @Value("${env_two}") String envTwo) {
+    public EnvVariableLabController(@Value("#{environment.ENV_ONE}") String envOne,
+                                    @Value("${env_two}") String envTwo) {
         this.envOne = envOne;
         this.envTwo = envTwo;
     }
